@@ -1,0 +1,19 @@
+html {
+  background-image: url("../images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+label {
+  text-transform: uppercase;
+  text-align: right;
+}
+
+input {
+  margin-left: 1rem;
+}
