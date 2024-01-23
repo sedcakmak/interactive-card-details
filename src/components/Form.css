@@ -4,16 +4,59 @@ html {
 }
 
 .form-wrapper {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  padding: 2rem;
 }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
 label {
   text-transform: uppercase;
-  text-align: right;
 }
 
 input {
-  margin-left: 1rem;
+  margin-left: 1.8rem;
+  border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.exp_date {
+  width: 40px;
+}
+
+.btn-confirm {
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  padding: 0.5rem;
+  width: 20rem;
 }
