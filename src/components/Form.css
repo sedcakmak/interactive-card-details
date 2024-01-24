@@ -4,18 +4,15 @@ html {
 }
 
 .form-wrapper {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-  padding: 2rem;
+  margin-left: 80px;
 }
 
 .row {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 label {
@@ -23,8 +20,11 @@ label {
 }
 
 input {
-  margin-left: 1.8rem;
-  border: none;
+  margin-left: 1rem;
+  border-color: lightgrey;
+  border-radius: 4px;
+  width: 100%;
+  padding: 0.5rem;
 }
 
 input::-webkit-outer-spin-button,
@@ -50,13 +50,19 @@ input::-webkit-inner-spin-button {
 }
 
 .exp_date {
-  width: 40px;
+  width: 60px;
 }
 
 .btn-confirm {
   background-color: black;
   color: white;
   border-radius: 8px;
+  margin-left: 1rem;
+  width: 100%;
   padding: 0.5rem;
-  width: 20rem;
+  transition: all 1s ease;
+}
+.btn-confirm:hover {
+  background-color: gray;
+  color: black;
 }

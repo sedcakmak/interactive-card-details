@@ -1,3 +1,22 @@
-.logo {
-  margin-top: 80px;
+.card-front-wrapper {
+  position: relative;
+}
+
+.card-number {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  color: white;
+}
+
+.wrapper {
+  position: absolute;
+  top: 70%;
+  color: white;
+}
+
+.card-name {
+  margin-left: 35%;
+}
+.valid-date {
 }
