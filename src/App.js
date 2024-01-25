@@ -1,13 +1,18 @@
 import Form from "./components/Form";
 import Card from "./components/Card";
 import "./App.css";
+import { createContext, useState } from "react";
+const CardContext = createContext();
 
 function App() {
+  const [cardName, setCardName] = useState("");
   return (
-    <div className="App">
-      <Card />
-      <Form />
-    </div>
+    <CardContext.Provider value={cardName}>
+      <div className="App">
+        <Card cardName={cardName} />
+        <Form cardName={cardName} />
+      </div>
+    </CardContext.Provider>
   );
 }
 
